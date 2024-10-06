@@ -1,19 +1,19 @@
 class House {
-    private int numRooms;
-    private int numFloors;
-    private boolean hasPool;
-    private boolean hasGarage;
-    private House(Builder builder) {
+    public int numRooms;
+    public int numFloors;
+    public boolean hasPool;
+    public boolean hasGarage;
+    public House(Builder builder) {
         this.numRooms = builder.numRooms;
         this.numFloors = builder.numFloors;
         this.hasPool = builder.hasPool;
         this.hasGarage = builder.hasGarage;
     }
     public static class Builder {
-        private int numRooms;
-        private int numFloors;
-        private boolean hasPool;
-        private boolean hasGarage;
+        public int numRooms;
+        public int numFloors;
+        public boolean hasPool;
+        public boolean hasGarage;
         public Builder setNumRooms(int numRooms) {
             this.numRooms = numRooms;
             return this;
